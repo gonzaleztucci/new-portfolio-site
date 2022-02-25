@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Contact from '../Contact';
 
 
 // FONT FAMILY
@@ -12,6 +13,7 @@ const Title = styled.h1`
 const SideBar = styled.div`
     background-color: #292d2d;
     width: 15%;
+    min-width: 230px;
     height: 100%;
 `
 const ProfilePic = styled.img`
@@ -30,6 +32,10 @@ const Item = styled.li`
     text-align: left;
     padding-left: 1rem;
     width: 100%;
+
+    &:hover {
+        color: white;
+    }
 `
 
 
@@ -44,6 +50,7 @@ const Navbar = () => {
             <Item>Skills</Item>
             <Item>Contact</Item>
           </Nav>
+          <Contact/>
           
         </SideBar>
 
