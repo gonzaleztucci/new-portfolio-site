@@ -17,7 +17,7 @@ const Projects = () => {
                   <div className="carousel-item active">
                     <a href="https://github.com/gonzaleztucci/e-commerce-api" target="_blank">
                       <img 
-                        src="./Resources/images/e-commerce-API.png" 
+                        src={require('../images/e-commerce-API.png')} 
                         className="d-block w-100" 
                         alt="e-commerce API"></img>
                     </a>
@@ -29,7 +29,7 @@ const Projects = () => {
                   <div className="carousel-item">
                     <a href="https://github.com/gonzaleztucci/the-munchies-app" target="_blank">
                       <img 
-                        src="./Resources/images/the-munchies-app.png" 
+                        src={require('../images/the-munchies-app.png')} 
                         className="d-block w-100" 
                         alt="The Munchies App"></img>
                     </a>
@@ -41,7 +41,7 @@ const Projects = () => {
                   <div className="carousel-item">
                     <a href="https://github.com/gonzaleztucci/jammming" target="_blank">
                       <img 
-                      src="./Resources/images/jammming-app.png" 
+                      src={require('../images/jammming-app.png')} 
                       className="d-block w-100" 
                       alt="Jamming App"></img>
                     </a>
@@ -54,7 +54,7 @@ const Projects = () => {
                   <div className="carousel-item">
                     <a href="https://github.com/gonzaleztucci/reddit-zero" target="_blank">
                       <img 
-                        src="./Resources/images/reddit-zero.png" 
+                        src={require('../images/reddit-zero.png')}
                         className="d-block w-100" 
                         alt="Reddit Zero app"></img>
                     </a>
