@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import Header from './components/Header';

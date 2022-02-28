@@ -11,10 +11,13 @@ const Title = styled.h1`
     text-align: center;
 `
 const SideBar = styled.div`
+    display: flex;
+    flex-direction: column;
     background-color: #292d2d;
     width: 15%;
     min-width: 230px;
     height: 100%;
+    /* overflow: hidden; */
 `
 const ProfilePic = styled.img`
     width: 100%
@@ -32,6 +35,7 @@ const Item = styled.li`
     text-align: left;
     padding-left: 1rem;
     width: 100%;
+    transition: all 0.3s;
 
     &:hover {
         color: white;
