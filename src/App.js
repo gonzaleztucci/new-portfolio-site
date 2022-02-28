@@ -9,7 +9,7 @@ import AboutMe from './components/AboutMe';
 
 const Container = styled.div`
   display: grid;
-  background-color: #f4d644;
+  
   grid-template-columns: 0.7fr 5fr;
   grid-template-rows: auto auto 25px;
   grid-template-areas: 
@@ -48,6 +48,7 @@ const Nav = styled.nav`
 
 const Head = styled.header`
   display: flex;
+  max-height: 190px;
   align-items: center;
   padding: 0;
   grid-area: header;
@@ -57,6 +58,7 @@ const Head = styled.header`
 
 const Main = styled.div`
   grid-area: main;
+  /* height: 100%; */
   background-color: white;
 `
 const Section = styled.h2`

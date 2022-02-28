@@ -4,12 +4,12 @@ import styled from 'styled-components'
 const Container = styled.div`
     background-color: #f4d644;
     display: flex;
-    margin-left: 1.5rem;
     padding: 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    height: 100%;
 `
 
 const Title = styled.h1`
