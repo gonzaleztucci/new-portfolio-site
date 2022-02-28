@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import Contact from '../Contact';
 
@@ -61,13 +62,37 @@ const Item = styled.li`
 
 
 const Navbar = () => {
+  let navigate = useNavigate();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    
+    const text = e.target.innerText;
+    switch (text){
+      case 'About Me':
+        navigate('/about-me');
+        break;
+      case 'Projects':
+        navigate('/projects');
+        break;
+      case 'Skills':
+        navigate('/skills');
+        break; 
+      case 'Contact':
+        navigate('/contact');
+        break;  
+      default:
+      console.log('nothing');
+    }
+  }
+
   return (
 
         <SideBar>
           <ProfilePic src={require('../images/linkedin-profile-min.jpg')} alt='Luis Gonzalez Tucci'/> 
           <Nav>
-            <Item>About Me</Item>
-            <Item>Projects</Item>
+            <Item onClick={handleClick}>About Me</Item>
+            <Item onClick={handleClick}>Projects</Item>
             <Item>Skills</Item>
             <Item>Contact</Item>
           </Nav>
