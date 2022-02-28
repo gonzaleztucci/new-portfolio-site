@@ -1,8 +1,10 @@
+import { BrowserRouter as Router, Routes ,Route } from 'react-router-dom';
 import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import styled from 'styled-components';
 import Footer from './components/Footer';
+import AboutMe from './components/AboutMe';
 
 
 const Container = styled.div`
@@ -62,13 +64,20 @@ const Foot = styled.footer`
 
 function App() {
   return (
-    <Container className="App">
-      <Nav><Navbar/></Nav>
-      <Head><Header/></Head>
-      <Main>MAIN</Main>
-      <Foot><Footer/></Foot>
+    <Router>
+      <Container className="App">
+        <Nav><Navbar/></Nav>
+        <Head><Header/></Head>
+        <Main>
+          <Routes>
+            <Route exact path="/about-me" element = {<AboutMe/>} />
+            <Route exact path="/projects" element = {<Projects/>} />
+          </Routes>
 
+        </Main>
+        <Foot><Footer/></Foot>
     </Container>
+    </Router>
   );
 }
 
