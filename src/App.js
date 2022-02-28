@@ -14,24 +14,21 @@ const Container = styled.div`
     "nav    main"
     "footer footer";
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
 `
 const Nav = styled.nav`
   grid-area: nav;
   min-width: 200px;
-  background-color: orange;
-
-`
+  `
 
 const Head = styled.header`
   grid-area: header;
   height: 100px;
-  background-color: greenyellow;
-
 `
 
 const Main = styled.div`
   grid-area: main;
-  background-color: aquamarine;
+  background-color: aliceblue;
 `
 
 const Foot = styled.footer`

@@ -16,7 +16,7 @@ const SideBar = styled.div`
     justify-content: space-between;
     background-color: #292d2d;
     width: 15%;
-    min-width: 230px;
+    min-width: 200px;
     height: 100%;
     /* overflow: hidden; */
 `
