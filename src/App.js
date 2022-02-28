@@ -11,7 +11,7 @@ const Container = styled.div`
   display: grid;
   background-color: #f4d644;
   grid-template-columns: 0.7fr 5fr;
-  grid-template-rows: 100px auto 25px;
+  grid-template-rows: auto auto 25px;
   grid-template-areas: 
     "nav    header"
     "nav    main"
@@ -20,7 +20,7 @@ const Container = styled.div`
   font-family: 'Poppins', sans-serif;
   @media (max-width: 680px){
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto auto 25px;
+    grid-template-rows: auto auto auto 25px;
     grid-template-areas: 
       "header"
       "nav"
@@ -47,15 +47,23 @@ const Nav = styled.nav`
   `
 
 const Head = styled.header`
+  display: flex;
+  align-items: center;
+  padding: 0;
   grid-area: header;
-  height: 100px;
+  z-index: 20;
+  box-shadow: 1px 1px 3px 0px rgba(115,105,102,0.75);
 `
 
 const Main = styled.div`
   grid-area: main;
-  background-color: aliceblue;
+  background-color: white;
 `
+const Section = styled.h2`
+text-align: center;
+margin-top: 10px;
 
+`
 const Foot = styled.footer`
   grid-area: footer;
   background-color: blueviolet;
@@ -69,6 +77,7 @@ function App() {
         <Nav><Navbar/></Nav>
         <Head><Header/></Head>
         <Main>
+          <Section>CURRENT ROUTE</Section>
           <Routes>
             <Route exact path="/about-me" element = {<AboutMe/>} />
             <Route exact path="/projects" element = {<Projects/>} />

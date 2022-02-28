@@ -1,10 +1,18 @@
 import React from 'react'
+import styled from 'styled-components'
+
+
+const Container = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 3rem;
+`
 
 const Projects = () => {
   return (
-    <div>
-            <h2>Projects</h2>
-            <div className="projects-container">
+    <Container>
+            <div className="projects-container" style={{boxShadow: "1px 1px 3px 0px rgba(115,105,102,0.75)"}}>
               <div id="carousel" className="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                   <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -21,7 +29,7 @@ const Projects = () => {
                         className="d-block w-100" 
                         alt="e-commerce API"></img>
                     </a>
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"rgba(59, 40, 40, 0.8)", color: "#f6f9fa", borderRadius: "4px"}}>
                       <h5>e-commerce API</h5>
                       <p>ExpressJS e-commerce CRUD API documented with Jest</p>
                     </div>
@@ -33,7 +41,7 @@ const Projects = () => {
                         className="d-block w-100" 
                         alt="The Munchies App"></img>
                     </a>
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"rgba(59, 40, 40, 0.8)", color: "#f6f9fa", borderRadius: "4px"}}>
                       <h5>The Munchies App</h5>
                       <p>Full Stack PERN app for reviewing restaurants</p>
                     </div>
@@ -46,7 +54,7 @@ const Projects = () => {
                       alt="Jamming App"></img>
                     </a>
 
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"rgba(59, 40, 40, 0.8)", color: "#f6f9fa", borderRadius: "4px"}}>
                       <h5>Jammming App</h5>
                       <p>Playlist creation app using React and Spotify API</p>
                     </div>
@@ -58,7 +66,7 @@ const Projects = () => {
                         className="d-block w-100" 
                         alt="Reddit Zero app"></img>
                     </a>
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"rgba(59, 40, 40, 0.8)", color: "#f6f9fa", borderRadius: "4px"}}>
                       <h5>Reddit Zero</h5>
                       <p>Simple Reddit client developed with React and Redux</p>
                     </div>
@@ -73,9 +81,8 @@ const Projects = () => {
                   <span className="visually-hidden">Next</span>
                 </button>
               </div>  
-
             </div>
-    </div>
+    </Container>
   )
 }
 

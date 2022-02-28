@@ -4,7 +4,8 @@ import styled from 'styled-components'
 const Container = styled.div`
     background-color: #f4d644;
     display: flex;
-    padding: 2.1rem;
+    margin-left: 1.5rem;
+    padding: 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
