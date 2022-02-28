@@ -6,7 +6,10 @@ import Footer from './components/Footer';
 
 const Container = styled.div`
   display: flex;
+  height: 100%;
 `
+
+
 
 function App() {
   return (

@@ -9,7 +9,7 @@ const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   gap: 5px;
   
 `

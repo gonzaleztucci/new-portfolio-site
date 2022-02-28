@@ -13,6 +13,7 @@ const Title = styled.h1`
 const SideBar = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: #292d2d;
     width: 15%;
     min-width: 230px;
