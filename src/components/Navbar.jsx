@@ -15,13 +15,22 @@ const SideBar = styled.div`
     flex-direction: column;
     justify-content: space-between;
     background-color: #292d2d;
-    width: 15%;
     min-width: 200px;
     height: 100%;
-    /* overflow: hidden; */
+    @media (max-width: 680px){
+      align-items: center;
+      /* justify-content: flex-start; */
+    }
+    
 `
+
+
 const ProfilePic = styled.img`
-    width: 100%
+  width: 100%;
+  @media (max-width: 680px){
+      display: none;
+    }
+
 `
 
 const Nav = styled.nav`
@@ -41,6 +50,13 @@ const Item = styled.li`
     &:hover {
         color: white;
     }
+
+    @media (max-width: 680px){
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin: 0.5rem;
+    }
+
 `
 
 
@@ -48,7 +64,7 @@ const Navbar = () => {
   return (
 
         <SideBar>
-          <ProfilePic src={require('../images/linkedin-profile-min.jpg')} alt='Luis Gonzalez Tucci'/>
+          <ProfilePic src={require('../images/linkedin-profile-min.jpg')} alt='Luis Gonzalez Tucci'/> 
           <Nav>
             <Item>About Me</Item>
             <Item>Projects</Item>

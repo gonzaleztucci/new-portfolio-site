@@ -9,7 +9,6 @@ const Container = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 100px;
 `
 
 const Title = styled.h1`
