@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Routes ,Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes ,Route, useNavigate, useLocation } from 'react-router-dom';
 import { SiteContext, SiteContextProvider } from './context/SiteContext';
 import Projects from './components/Projects';
 import Banner from './components/Banner';
@@ -79,11 +79,12 @@ const Foot = styled.footer`
 function App() {
 
   // const {page} = useContext(SiteContext);
+
   
 
   return (
     <SiteContextProvider>
-      <Router>
+      <Router>       
         <Container className="App">
           <Nav><Navbar/></Nav>
           <Head><Header/></Head>

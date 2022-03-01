@@ -1,6 +1,7 @@
-import React, {useContext} from 'react';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { SiteContext } from '../context/SiteContext';
+
 
 const Title = styled.h2`
     padding: 2rem;
@@ -9,9 +10,26 @@ const Title = styled.h2`
 `
 
 const Banner = () => {
-    const {page} = useContext(SiteContext);
+    const location = useLocation();
+    console.log(location.pathname);
+
+    let text;
+
+    switch (location.pathname){
+        case '/':
+            text = 'Home';
+            break;
+        case '/about-me':
+            text = 'About Me';
+            break;
+        case '/projects':
+            text = 'Projects';
+            break;
+        default:
+            text = '';
+    }
   return (
-    <Title>{page}</Title>
+      <Title>{text}</Title>
   )
 }
 

@@ -110,7 +110,6 @@ const Navbar = () => {
             <Item onClick={handleClick}>About Me</Item>
             <Item onClick={handleClick}>Projects</Item>
             <Item>Skills</Item>
-            <Item>Contact</Item>
           </Nav>
           <Contacts><Contact/></Contacts>
           
