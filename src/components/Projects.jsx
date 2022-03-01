@@ -5,8 +5,11 @@ import styled from 'styled-components'
 const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  padding: 3rem;
+  margin-bottom: 3rem;
+  width: 85%;
+  @media (max-width: 1000px){
+    width: 100%;
+  }
 `
 
 const Projects = () => {
