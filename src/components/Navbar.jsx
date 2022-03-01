@@ -1,6 +1,5 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { SiteContext } from '../context/SiteContext';
 import styled from 'styled-components';
 import Contact from '../Contact';
 
@@ -74,7 +73,6 @@ const Contacts = styled.div`
 
 const Navbar = () => {
   let navigate = useNavigate();
-  const {page, setPage} = useContext(SiteContext);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -96,10 +94,7 @@ const Navbar = () => {
         break;  
       default:
       console.log('nothing');
-    }
-
-    setPage(text);
-    
+    }    
   }
 
   return (

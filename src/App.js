@@ -1,6 +1,5 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes ,Route, useNavigate, useLocation } from 'react-router-dom';
-import { SiteContext, SiteContextProvider } from './context/SiteContext';
 import Projects from './components/Projects';
 import Banner from './components/Banner';
 import Navbar from './components/Navbar';
@@ -15,7 +14,7 @@ const Container = styled.div`
   display: grid;
   
   grid-template-columns: 0.7fr 5fr;
-  grid-template-rows: auto auto 25px;
+  grid-template-rows: 120px auto 25px;
   grid-template-areas: 
     "nav    header"
     "nav    main"
@@ -78,12 +77,10 @@ const Foot = styled.footer`
 
 function App() {
 
-  // const {page} = useContext(SiteContext);
 
-  
 
   return (
-    <SiteContextProvider>
+
       <Router>       
         <Container className="App">
           <Nav><Navbar/></Nav>
@@ -98,9 +95,7 @@ function App() {
           </Main>
           <Foot><Footer/></Foot>
       </Container>
-      </Router>
-    </SiteContextProvider>
-    
+      </Router>    
   );
 }
 
