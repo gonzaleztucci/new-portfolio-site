@@ -7,6 +7,7 @@ import Header from './components/Header';
 import styled from 'styled-components';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
+import Skills from './components/Skills';
 
 
 
@@ -18,7 +19,7 @@ const Container = styled.div`
   grid-template-areas: 
     "nav    header"
     "nav    main"
-    "footer footer";
+    "nav footer";
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   @media (max-width: 680px){
@@ -90,6 +91,7 @@ function App() {
             <Routes>
               <Route exact path="/about-me" element = {<AboutMe/>} />
               <Route exact path="/projects" element = {<Projects/>} />
+              <Route exact path= "/skills" element = {<Skills/>} />
             </Routes>
 
           </Main>

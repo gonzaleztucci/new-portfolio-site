@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import Contact from '../Contact';
+import Contact from './Contact';
 
 
 // FONT FAMILY
@@ -104,7 +104,7 @@ const Navbar = () => {
           <Nav>
             <Item onClick={handleClick}>About Me</Item>
             <Item onClick={handleClick}>Projects</Item>
-            <Item>Skills</Item>
+            <Item onClick={handleClick}>Skills</Item>
           </Nav>
           <Contacts><Contact/></Contacts>
           

@@ -26,6 +26,9 @@ const Banner = () => {
         case '/projects':
             text = 'Projects';
             break;
+        case '/skills':
+            text = 'Skills';
+            break;
         default:
             text = '';
     }
