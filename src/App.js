@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes ,Route, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes ,Route } from 'react-router-dom';
 import Projects from './components/Projects';
 import Banner from './components/Banner';
 import Navbar from './components/Navbar';
@@ -64,11 +64,6 @@ const Main = styled.div`
   grid-area: main;
   /* height: 100%; */
   background-color: white;
-`
-const Section = styled.h2`
-text-align: center;
-margin-top: 10px;
-
 `
 const Foot = styled.footer`
   grid-area: footer;

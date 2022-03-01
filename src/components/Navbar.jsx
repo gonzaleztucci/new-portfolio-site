@@ -7,10 +7,6 @@ import Contact from './Contact';
 // FONT FAMILY
 // font-family: 'Poppins', sans-serif;
 
-const Title = styled.h1`
-    font-size: 10em;
-    text-align: center;
-`
 const SideBar = styled.div`
     display: grid;
     grid-template-rows: auto 200px 200px 1fr;
@@ -25,7 +21,7 @@ const SideBar = styled.div`
     height: 100%;
     @media (max-width: 680px){
       align-items: center;
-      /* justify-content: flex-start; */
+      padding: 2rem;
     }
     
 `
@@ -42,8 +38,10 @@ const ProfilePic = styled.img`
 
 const Nav = styled.nav`
     list-style-type: none;
+    padding: 0;
     margin-top: 2.3rem;
     grid-area: nav;
+
 `
 const Item = styled.li`
     font-size: 1.2rem ;
@@ -62,8 +60,10 @@ const Item = styled.li`
 
     @media (max-width: 680px){
       text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      text-align: center;
       font-size: 2rem;
-      margin: 0.5rem;
     }
 
 `

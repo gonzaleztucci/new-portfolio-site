@@ -23,7 +23,7 @@ const Projects = () => {
                 </div>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <a href="https://github.com/gonzaleztucci/e-commerce-api" target="_blank">
+                    <a href="https://github.com/gonzaleztucci/e-commerce-api" target="_blank" rel="noopener noreferrer">
                       <img 
                         src={require('../images/e-commerce-API.png')} 
                         className="d-block w-100" 
@@ -35,7 +35,7 @@ const Projects = () => {
                     </div>
                   </div>
                   <div className="carousel-item">
-                    <a href="https://github.com/gonzaleztucci/the-munchies-app" target="_blank">
+                    <a href="https://github.com/gonzaleztucci/the-munchies-app" target="_blank" rel="noopener noreferrer">
                       <img 
                         src={require('../images/the-munchies-app.png')} 
                         className="d-block w-100" 
@@ -47,7 +47,7 @@ const Projects = () => {
                     </div>
                   </div>
                   <div className="carousel-item">
-                    <a href="https://github.com/gonzaleztucci/jammming" target="_blank">
+                    <a href="https://github.com/gonzaleztucci/jammming" target="_blank" rel="noopener noreferrer">
                       <img 
                       src={require('../images/jammming-app.png')} 
                       className="d-block w-100" 
@@ -60,7 +60,7 @@ const Projects = () => {
                     </div>
                   </div>
                   <div className="carousel-item">
-                    <a href="https://github.com/gonzaleztucci/reddit-zero" target="_blank">
+                    <a href="https://github.com/gonzaleztucci/reddit-zero" target="_blank" rel="noopener noreferrer">
                       <img 
                         src={require('../images/reddit-zero.png')}
                         className="d-block w-100" 

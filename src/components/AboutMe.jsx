@@ -61,7 +61,7 @@ const AboutMe = () => {
           <br/>
         <p>
           On top of my Systems Engineering degree, in regards of Web Development,
-          I've trained myself mostly with <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Codecademy's Full-Stack Software Engineer career path</a>,  
+          I've trained myself mostly with <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank" rel="noopener noreferrer">Codecademy's Full-Stack Software Engineer career path</a>,  
             which includes training on important aspects such as:
         </p>
           <br/>
@@ -73,7 +73,7 @@ const AboutMe = () => {
           </ul>
           <br/>
         <p>
-          Check out my work on my <a href="https://github.com/gonzaleztucci/" target="_blank">Github profile</a>
+          Check out my work on my <a href="https://github.com/gonzaleztucci/" target="_blank" rel="noopener noreferrer">Github profile</a>
         </p>  
       </Bio>
       <Image src={require('../images/Luis-and-Kawi.jpg')} alt='Luis and Kawi at La Marina'></Image>
