@@ -15,6 +15,10 @@ const Container = styled.div`
       flex-direction: column-reverse;
       align-items: center;
     }
+
+  @media (max-width: 680px){
+    padding: 0;
+  }
 `
 
 const Bio = styled.div`
