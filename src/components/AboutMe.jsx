@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styled from 'styled-components';
+import { SiteContext } from '../context/SiteContext';
+
 
 const Container = styled.div`
   display: flex;
@@ -40,8 +42,13 @@ const Image = styled.img`
 `
 
 const AboutMe = () => {
+
+  const {page} = useContext(SiteContext);
+
   return (
     <Container>
+    <h1>{page}</h1>
+
       <Bio>
         <p>
             I'm a Full Stack Web Developer based in Valencia, Spain.

@@ -1,10 +1,14 @@
+import React, { useContext } from 'react';
 import { BrowserRouter as Router, Routes ,Route, useNavigate } from 'react-router-dom';
+import { SiteContext, SiteContextProvider } from './context/SiteContext';
 import Projects from './components/Projects';
+import Banner from './components/Banner';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import styled from 'styled-components';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
+
 
 
 const Container = styled.div`
@@ -73,22 +77,29 @@ const Foot = styled.footer`
 
 
 function App() {
-  return (
-    <Router>
-      <Container className="App">
-        <Nav><Navbar/></Nav>
-        <Head><Header/></Head>
-        <Main>
-          <Section>CURRENT ROUTE</Section>
-          <Routes>
-            <Route exact path="/about-me" element = {<AboutMe/>} />
-            <Route exact path="/projects" element = {<Projects/>} />
-          </Routes>
 
-        </Main>
-        <Foot><Footer/></Foot>
-    </Container>
-    </Router>
+  // const {page} = useContext(SiteContext);
+  
+
+  return (
+    <SiteContextProvider>
+      <Router>
+        <Container className="App">
+          <Nav><Navbar/></Nav>
+          <Head><Header/></Head>
+          <Main>
+            <Banner />
+            <Routes>
+              <Route exact path="/about-me" element = {<AboutMe/>} />
+              <Route exact path="/projects" element = {<Projects/>} />
+            </Routes>
+
+          </Main>
+          <Foot><Footer/></Foot>
+      </Container>
+      </Router>
+    </SiteContextProvider>
+    
   );
 }
 
