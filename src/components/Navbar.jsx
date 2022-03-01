@@ -77,20 +77,24 @@ const Navbar = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    const text = e.target.innerText;
+    const innerText = e.target.innerText;
+    const text = innerText.toLowerCase();
+    
+    
+    // alert(text);
   
     
     switch (text){
-      case 'About Me':
+      case 'about me':
         navigate('/about-me');
         break;
-      case 'Projects':
+      case 'projects':
         navigate('/projects');
         break;
-      case 'Skills':
+      case 'skills':
         navigate('/skills');
         break; 
-      case 'Contact':
+      case 'contact':
         navigate('/contact');
         break;  
       default:

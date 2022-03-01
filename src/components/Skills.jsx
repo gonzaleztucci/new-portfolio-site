@@ -40,7 +40,7 @@ font-size: 3.5rem;
 `
 const Icon = styled.text`
     margin: 1rem;
-    color: #595a5a;
+    color: #292d2d;   
 `
 
 const Skills = () => {
