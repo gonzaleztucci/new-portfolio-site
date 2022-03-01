@@ -30,6 +30,9 @@ const Banner = () => {
         case '/skills':
             text = 'Skills';
             break;
+        case '/contact':
+            text = 'Contact Info';
+            break;
         default:
             text = '';
     }

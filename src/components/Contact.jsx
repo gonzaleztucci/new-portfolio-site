@@ -55,7 +55,7 @@ const Title = styled.p`
   padding: 0;
   margin: 0;
 `
-const Info = styled.p`
+const Info = styled.a`
   color:#a6a6a6;
   font-size: 0.6rem ;
   margin: 0;
@@ -69,21 +69,21 @@ const Contact = () => {
           <LogoContainer><Logo><FontAwesomeIcon icon={faPhone} /></Logo></LogoContainer>
           <Text>
             <Title>Phone</Title>
-            <Info>+ 34 653 70 26 57</Info>
+            <Info href='tel:+34653702657' >+ 34 653 70 26 57</Info>
           </Text>
         </Tile>
         <Tile>
           <LogoContainer><Logo><FontAwesomeIcon icon={faEnvelope} /></Logo></LogoContainer>
           <Text>
             <Title>Email</Title>
-            <Info>gonzaleztucci@gmail.com</Info>
+            <Info href='mailto:gonzaleztucci@gmail.com'>gonzaleztucci@gmail.com</Info>
           </Text>
         </Tile>
         <Tile>
           <LogoContainer><Logo><FontAwesomeIcon icon={faGithub} /></Logo></LogoContainer>
           <Text>
             <Title>Github</Title>
-            <Info>https://github.com/gonzaleztucci</Info>
+            <Info href='https://github.com/gonzaleztucci'>https://github.com/gonzaleztucci</Info>
           </Text>
         </Tile>
 

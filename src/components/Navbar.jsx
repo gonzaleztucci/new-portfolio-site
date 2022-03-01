@@ -22,6 +22,10 @@ const SideBar = styled.div`
     @media (max-width: 680px){
       align-items: center;
       padding: 2rem;
+      grid-template-rows: auto 200px;
+      grid-template-areas:
+      "pic"
+      "nav" ;
     }
     
 `
@@ -41,6 +45,10 @@ const Nav = styled.nav`
     padding: 0;
     margin-top: 2.3rem;
     grid-area: nav;
+    @media (max-width: 680px){
+      margin: 2rem auto;
+    }
+    
 
 `
 const Item = styled.li`
@@ -67,9 +75,38 @@ const Item = styled.li`
     }
 
 `
+
+const ContactsItem = styled.li`
+    font-size: 1.2rem ;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    color: #a6a6a6;
+    text-align: left;
+    padding-left: 1rem;
+    width: 100%;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    @media (min-width: 680px){
+      display: none;
+    }
+
+`
 const Contacts = styled.div`
   grid-area: contact;
   justify-content: flex-start;
+  @media (max-width: 680px){
+    display: none;
+    }
 `
 
 const Navbar = () => {
@@ -110,6 +147,8 @@ const Navbar = () => {
             <Item onClick={handleClick}>About Me</Item>
             <Item onClick={handleClick}>Projects</Item>
             <Item onClick={handleClick}>Skills</Item>
+            <ContactsItem onClick={handleClick}>Contact</ContactsItem>
+  
           </Nav>
           <Contacts><Contact/></Contacts>
           
