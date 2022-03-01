@@ -13,9 +13,14 @@ const Title = styled.h1`
     text-align: center;
 `
 const SideBar = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: auto 200px 200px 1fr;
+    grid-template-areas:
+    "pic"
+    "nav"
+    "contact"
+    "whitespace" ;
+
     background-color: #292d2d;
     min-width: 200px;
     height: 100%;
@@ -29,6 +34,7 @@ const SideBar = styled.div`
 
 const ProfilePic = styled.img`
   width: 100%;
+  grid-area: pic;
   @media (max-width: 680px){
       display: none;
     }
@@ -38,6 +44,7 @@ const ProfilePic = styled.img`
 const Nav = styled.nav`
     list-style-type: none;
     margin-top: 2.3rem;
+    grid-area: nav;
 `
 const Item = styled.li`
     font-size: 1.2rem ;
@@ -60,7 +67,10 @@ const Item = styled.li`
     }
 
 `
-
+const Contacts = styled.div`
+  grid-area: contact;
+  justify-content: flex-start;
+`
 
 const Navbar = () => {
   let navigate = useNavigate();
@@ -102,7 +112,7 @@ const Navbar = () => {
             <Item>Skills</Item>
             <Item>Contact</Item>
           </Nav>
-          <Contact/>
+          <Contacts><Contact/></Contacts>
           
         </SideBar>
 
