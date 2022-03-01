@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 
 const Title = styled.h2`
+    color: #292d2d;
     padding: 2rem;
     text-align: center;
     font-weight: 600;

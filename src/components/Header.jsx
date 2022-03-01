@@ -14,6 +14,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
     font-family: 'Poppins', sans-serif;
+    color: #292d2d;
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 800;
@@ -23,6 +24,7 @@ const Title = styled.h1`
 `
 const Subtitle = styled.h3`
     font-family: 'Poppins', sans-serif;
+    color: #292d2d;
     font-size: 1rem;
     text-transform: uppercase;
     margin: 0rem;

@@ -18,6 +18,7 @@ const Container = styled.div`
 `
 
 const Bio = styled.div`
+  color: #595a5a;
   width: 50%;
   margin-left: auto;
   margin-right: auto;

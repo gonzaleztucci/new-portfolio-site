@@ -57,6 +57,7 @@ const Item = styled.li`
 
     &:hover {
         color: white;
+        cursor: pointer;
     }
 
     @media (max-width: 680px){
