@@ -98,7 +98,7 @@ const Navbar = () => {
         navigate('/contact');
         break;  
       default:
-      console.log('nothing');
+        navigate('/about-me');
     }    
   }
 
@@ -114,9 +114,6 @@ const Navbar = () => {
           <Contacts><Contact/></Contacts>
           
         </SideBar>
-
-
-
 
   )
 }

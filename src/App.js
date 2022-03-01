@@ -84,6 +84,7 @@ function App() {
           <Main>
             <Banner />
             <Routes>
+              <Route exact path="/" element = {<AboutMe/>} />
               <Route exact path="/about-me" element = {<AboutMe/>} />
               <Route exact path="/projects" element = {<Projects/>} />
               <Route exact path= "/skills" element = {<Skills/>} />

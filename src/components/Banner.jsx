@@ -19,7 +19,7 @@ const Banner = () => {
 
     switch (location.pathname){
         case '/':
-            text = 'Home';
+            text = 'About Me';
             break;
         case '/about-me':
             text = 'About Me';
