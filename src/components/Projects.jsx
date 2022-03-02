@@ -8,7 +8,11 @@ const Container = styled.div`
   margin-bottom: 3rem;
   width: 85%;
   @media (max-width: 1000px){
-    width: 100%;
+    width: 90%;
+  }
+
+  @media (max-width: 680px){
+    width: 95%;
   }
 `
 
