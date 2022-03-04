@@ -26,6 +26,7 @@ const Projects = () => {
                   <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
 
                 </div>
                 <div className="carousel-inner">
@@ -76,6 +77,18 @@ const Projects = () => {
                     <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"rgba(59, 40, 40, 0.8)", color: "#f6f9fa", borderRadius: "4px"}}>
                       <h5>Reddit Zero</h5>
                       <p>Simple Reddit client developed with React and Redux</p>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <a href="https://github.com/gonzaleztucci/new-portfolio-site" target="_blank" rel="noopener noreferrer">
+                      <img 
+                        src={require('../images/portfolio-site.png')}
+                        className="d-block w-100" 
+                        alt="portfolio site"></img>
+                    </a>
+                    <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"rgba(59, 40, 40, 0.8)", color: "#f6f9fa", borderRadius: "4px"}}>
+                      <h5>This site</h5>
+                      <p>Fully responsive site developed with React</p>
                     </div>
                   </div>
                 </div>
