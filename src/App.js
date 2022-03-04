@@ -15,9 +15,8 @@ import ContactsPage from './components/ContactsPage';
 
 const Container = styled.div`
   display: grid;
-  
   grid-template-columns: 0.7fr 5fr;
-  grid-template-rows: 120px auto 25px;
+  grid-template-rows: 120px auto auto;
   grid-template-areas: 
     "nav    header"
     "nav    main"
@@ -73,7 +72,6 @@ const Main = styled.div`
 `
 const Foot = styled.footer`
   grid-area: footer;
-  background-color: blueviolet;
 `
 
 
