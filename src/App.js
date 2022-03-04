@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes ,Route } from 'react-router-dom';
 import { SiteContextProvider } from './context/SiteContext';
 import Projects from './components/Projects';
@@ -60,6 +60,9 @@ const Head = styled.header`
   grid-area: header;
   z-index: 20;
   box-shadow: 1px 1px 3px 0px rgba(115,105,102,0.75);
+  /* visibility: ${props => props.active ? 'visible ' : 'hidden'}; */
+  transform: ${props => props.active ? 'translateY(0%)' : 'translateY(-100%)'};
+  transition: all 0.3s ease-out;
 `
 
 const Main = styled.div`
@@ -74,6 +77,19 @@ const Foot = styled.footer`
 
 
 function App() {
+  const [header, setHeader] = useState(true);
+
+  
+  const toggleHeader = () => {
+    console.log(window.scrollY);
+    if(window.scrollY >= 120){
+        setHeader(false);  
+    } else {
+      setHeader(true);
+    }
+  };
+
+  window.addEventListener('scroll', toggleHeader);
 
 
 
@@ -82,7 +98,7 @@ function App() {
       <Router>       
         <Container className="App">
           <Nav><Navbar/></Nav>
-          <Head><Header/></Head>
+          <Head active = {header}><Header/></Head>
           <Main>
             <Banner />
             <Routes>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -32,6 +32,11 @@ const Subtitle = styled.h3`
     padding-top: 0;
 `
 const Header = () => {
+  
+
+
+
+
   return (
     <Container>
         <Title>Luis Gonzalez Tucci</Title>
