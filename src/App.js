@@ -60,9 +60,10 @@ const Head = styled.header`
   grid-area: header;
   z-index: 20;
   box-shadow: 1px 1px 3px 0px rgba(115,105,102,0.75);
-  /* visibility: ${props => props.active ? 'visible ' : 'hidden'}; */
-  transform: ${props => props.active ? 'translateY(0%)' : 'translateY(-100%)'};
-  transition: all 0.3s ease-out;
+  @media (min-width: 680px) {
+    transform: ${props => props.active ? 'translateY(0%)' : 'translateY(-100%)'};
+    transition: all 0.3s ease-out;
+  }
 `
 
 const Main = styled.div`
