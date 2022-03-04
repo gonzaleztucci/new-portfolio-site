@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes ,Route } from 'react-router-dom';
+import { SiteContextProvider } from './context/SiteContext';
 import Projects from './components/Projects';
 import Banner from './components/Banner';
 import Navbar from './components/Navbar';
@@ -77,7 +78,7 @@ function App() {
 
 
   return (
-
+    <SiteContextProvider>
       <Router>       
         <Container className="App">
           <Nav><Navbar/></Nav>
@@ -91,11 +92,13 @@ function App() {
               <Route exact path= "/skills" element = {<Skills/>} />
               <Route exact path= "/contact" element = {<ContactsPage/>} />
             </Routes>
-
           </Main>
           <Foot><Footer/></Foot>
       </Container>
-      </Router>    
+    </Router>    
+  </SiteContextProvider>
+
+
   );
 }
 

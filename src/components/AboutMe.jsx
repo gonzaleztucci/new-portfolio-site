@@ -69,7 +69,7 @@ const AboutMe = () => {
             which includes training on important aspects such as:
         </p>
           <br/>
-          <ul class="list-group list-group-flush">
+          <ul className="list-group list-group-flush">
             <li className="list-group-item">Testing methodologies including TDD</li>
             <li className="list-group-item">Web Security Fundamentals</li>
             <li className="list-group-item">User Authentication & Authorization</li>
