@@ -89,7 +89,6 @@ const HeaderContainer = styled.header`
 
 const Main = styled.div`
   grid-area: main;
-  /* height: 100%; */
   background-color: white;
 `
 const FooterContainer = styled.footer`
