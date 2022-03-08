@@ -51,11 +51,17 @@ const Nav = styled.nav`
   background-color: blue;
   `
 
-const Head = styled.header`
+const HeaderContainer = styled.header`
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: #f4d644;
+  width: 100%;
   max-height: 190px;
   align-items: center;
-  padding: 0;
+  padding: 1.5rem;
   grid-area: header;
   z-index: 20;
   box-shadow: 1px 1px 3px 0px rgba(115,105,102,0.75);
@@ -70,21 +76,27 @@ const Main = styled.div`
   /* height: 100%; */
   background-color: white;
 `
-const Foot = styled.footer`
+const FooterContainer = styled.footer`
   grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 100%;
+  background-color: #f4d644;
+  padding: 3px; 
 `
 
 
 function App() {
-  const [header, setHeader] = useState(true);
+  const [headerVisibility, setHeaderVisibility] = useState(true);
 
   
   const toggleHeader = () => {
     console.log(window.scrollY);
     if(window.scrollY >= 120){
-        setHeader(false);  
+      setHeaderVisibility(false);  
     } else {
-      setHeader(true);
+      setHeaderVisibility(true);
     }
   };
 
@@ -97,7 +109,7 @@ function App() {
       <Router>       
         <Container className="App">
           <Nav><Navbar/></Nav>
-          <Head active = {header}><Header/></Head>
+          <HeaderContainer active = {headerVisibility}><Header/></HeaderContainer>
           <Main>
             <Banner />
             <Routes>
@@ -108,7 +120,7 @@ function App() {
               <Route exact path= "/contact" element = {<ContactsPage/>} />
             </Routes>
           </Main>
-          <Foot><Footer/></Foot>
+          <FooterContainer><Footer/></FooterContainer>
       </Container>
     </Router>    
   </SiteContextProvider>
