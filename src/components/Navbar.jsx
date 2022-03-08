@@ -7,28 +7,6 @@ import Contact from './Contact';
 // FONT FAMILY
 // font-family: 'Poppins', sans-serif;
 
-const SideBar = styled.div`
-    display: grid;
-    grid-template-rows: auto 200px 200px 1fr;
-    grid-template-areas:
-    "pic"
-    "nav"
-    "contact"
-    "whitespace" ;
-
-    background-color: #292d2d;
-    min-width: 200px;
-    height: 100%;
-    @media (max-width: 680px){
-      align-items: center;
-      padding: 2rem;
-      grid-template-rows: auto 200px;
-      grid-template-areas:
-      "pic"
-      "nav" ;
-    }
-    
-`
 
 
 const ProfilePic = styled.img`
@@ -141,18 +119,17 @@ const Navbar = () => {
 
   return (
 
-        <SideBar>
+        <>
           <ProfilePic src={require('../images/linkedin-profile-min.jpg')} alt='Luis Gonzalez Tucci'/> 
           <Nav>
             <Item onClick={handleClick}>About Me</Item>
             <Item onClick={handleClick}>Projects</Item>
             <Item onClick={handleClick}>Skills</Item>
             <ContactsItem onClick={handleClick}>Contact</ContactsItem>
-  
           </Nav>
           <Contacts><Contact/></Contacts>
           
-        </SideBar>
+        </>
 
   )
 }

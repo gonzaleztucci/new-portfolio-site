@@ -45,10 +45,26 @@ const Container = styled.div`
   }
 
 `
-const Nav = styled.nav`
+const NavContainer = styled.nav`
   grid-area: nav;
   min-width: 200px;
-  background-color: blue;
+  display: grid;
+  grid-template-rows: auto 200px 200px 1fr;
+  grid-template-areas:
+  "pic"
+  "nav"
+  "contact"
+  "whitespace" ;
+  background-color: #292d2d;
+  height: 100%;
+    @media (max-width: 680px){
+      align-items: center;
+      padding: 2rem;
+      grid-template-rows: auto 200px;
+      grid-template-areas:
+      "pic"
+      "nav" ;
+    }
   `
 
 const HeaderContainer = styled.header`
@@ -108,7 +124,7 @@ function App() {
     <SiteContextProvider>
       <Router>       
         <Container className="App">
-          <Nav><Navbar/></Nav>
+          <NavContainer><Navbar/></NavContainer>
           <HeaderContainer active = {headerVisibility}><Header/></HeaderContainer>
           <Main>
             <Banner />
