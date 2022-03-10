@@ -27,10 +27,23 @@ const Projects = () => {
                   <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                   <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
 
                 </div>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
+                    <a href="https://github.com/gonzaleztucci/ravenous" target="_blank" rel="noopener noreferrer">
+                      <img 
+                        src={require('../images/ravenous.png')} 
+                        className="d-block w-100" 
+                        alt="Ravenous app"></img>
+                    </a>
+                    <div className="carousel-caption d-none d-md-block" style={{backgroundColor:"rgba(59, 40, 40, 0.8)", color: "#f6f9fa", borderRadius: "4px"}}>
+                      <h5>Yelp Clone App</h5>
+                      <p>React app interacting with the Yelp API</p>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
                     <a href="https://github.com/gonzaleztucci/e-commerce-api" target="_blank" rel="noopener noreferrer">
                       <img 
                         src={require('../images/e-commerce-API.png')} 
