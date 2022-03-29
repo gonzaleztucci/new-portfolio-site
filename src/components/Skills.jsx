@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3, faJs, faBootstrap, faJava, faGitAlt, faGithubSquare, faReact, faNode } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJs, faBootstrap, faJava, faGitAlt, faGithubSquare, faReact,faNode, faVuejs } from '@fortawesome/free-brands-svg-icons';
 
 const Subtitle = styled.h3 `
     color: #292d2d;    
@@ -66,6 +66,7 @@ const Skills = () => {
             <Icon><FontAwesomeIcon icon={faGitAlt} /></Icon>
             <Icon><FontAwesomeIcon icon={faGithubSquare} /></Icon>
             <Icon><FontAwesomeIcon icon={faReact} /></Icon>
+            <Icon><FontAwesomeIcon icon={faVuejs} /></Icon>
             <Icon><FontAwesomeIcon icon={faNode} /> </Icon>         
          </Logos>
          <br />
