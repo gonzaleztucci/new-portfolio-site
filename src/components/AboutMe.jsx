@@ -59,8 +59,19 @@ const AboutMe = () => {
         </p>
           <br/>
         <p>
-          I specialize in Node.js and have experience building REST APIs with Express coupled with PostgreSQL.
-          For the Front End I work mostly with React and libraries such as Redux and React Bootstrap and styled components.
+        In 2022 I joined <a href="https://cohelion.com/" target="_blank" rel="noopener noreferrer">Cohelion</a> as a Junior Software Developer, 
+        which has not only allowed me to gain technical expertise in data manipulation, 
+        analysis, and visualization, but also invaluable experience in remotely 
+        collaborating with cross functional teams, code debugging and adhering to best coding practices. 
+        This has been a great place to enhance my overall software development skills, 
+        contributing to a strong foundation for my future career.
+
+        </p>
+          <br/>
+        <p>
+        During this period I’ve been learning and working mainly in Coldfusion and SQL Server, 
+        but I also have strong knowledge of Node.js and have experience building REST APIs with Express coupled with PostgreSQL. 
+        For the Front End I work mostly with React and libraries such as Redux and React Bootstrap and styled components.
         </p>
           <br/>
         <p>
@@ -80,7 +91,7 @@ const AboutMe = () => {
           Check out my work on my <a href="https://github.com/gonzaleztucci/" target="_blank" rel="noopener noreferrer">Github profile</a>
         </p>  
       </Bio>
-      <Image src={require('../images/Luis-and-Kawi.jpg')} alt='Luis and Kawi at La Marina'></Image>
+      <Image src={require('../images/IMG_4485.jpeg')} alt='Luis and his dogs hicking'></Image>
       
       
       
